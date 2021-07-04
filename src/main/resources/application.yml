@@ -1,0 +1,15 @@
+spring:
+  datasource:
+    url: jdbc:postgresql://localhost:5432/rms
+    username: admin
+    password: rmsadmin
+    driverClassName: org.postgresql.Driver
+  flyway:
+    schemas: rms
+  jpa:
+    hibernate:
+      ddl-auto: validate
+    properties:
+      hibernate:
+        dialect: org.hibernate.dialect.PostgreSQLDialect
+        globally_quoted_identifiers: true
