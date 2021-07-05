@@ -1,5 +1,8 @@
-package com.kwlz.rms.repository.model;
+package com.kwlz.rms.userroom;
 
+import com.kwlz.rms.room.Room;
+import com.kwlz.rms.roomstatus.RoomStatus;
+import com.kwlz.rms.user.User;
 import lombok.AllArgsConstructor;
 import lombok.Builder;
 import lombok.Data;

@@ -1,5 +1,6 @@
-package com.kwlz.rms.repository.model;
+package com.kwlz.rms.user;
 
+import com.kwlz.rms.userrole.UserRole;
 import lombok.AccessLevel;
 import lombok.AllArgsConstructor;
 import lombok.Builder;
@@ -33,7 +34,7 @@ public class User {
     @EqualsAndHashCode.Exclude
     @GeneratedValue(strategy = GenerationType.SEQUENCE, generator = "user_generator")
     @SequenceGenerator(name = "user_generator", sequenceName = "user_seq",
-            schema = "rms", allocationSize = 10)
+            schema = "rms", allocationSize = 1)
     @Column(updatable = false, nullable = false)
     @Setter(AccessLevel.NONE)
     private BigDecimal id;

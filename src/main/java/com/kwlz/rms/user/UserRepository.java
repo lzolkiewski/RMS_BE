@@ -1,6 +1,5 @@
-package com.kwlz.rms.repository;
+package com.kwlz.rms.user;
 
-import com.kwlz.rms.repository.model.User;
 import org.springframework.data.jpa.repository.JpaRepository;
 import org.springframework.stereotype.Repository;
 

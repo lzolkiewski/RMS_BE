@@ -1,6 +1,5 @@
-package com.kwlz.rms.repository;
+package com.kwlz.rms.roomstatus;
 
-import com.kwlz.rms.repository.model.RoomStatus;
 import org.springframework.data.jpa.repository.JpaRepository;
 import org.springframework.stereotype.Repository;
 

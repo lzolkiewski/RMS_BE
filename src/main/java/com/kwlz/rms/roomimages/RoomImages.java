@@ -1,5 +1,6 @@
-package com.kwlz.rms.repository.model;
+package com.kwlz.rms.roomimages;
 
+import com.kwlz.rms.room.Room;
 import lombok.AccessLevel;
 import lombok.Data;
 import lombok.EqualsAndHashCode;
@@ -27,7 +28,7 @@ public class RoomImages {
     @EqualsAndHashCode.Exclude
     @GeneratedValue(strategy = GenerationType.SEQUENCE, generator = "room_images_generator")
     @SequenceGenerator(name = "room_images_generator", sequenceName = "room_images_seq",
-            schema = "rms", allocationSize = 10)
+            schema = "rms", allocationSize = 1)
     @Column(updatable = false, nullable = false)
     @Setter(AccessLevel.NONE)
     private BigDecimal id;

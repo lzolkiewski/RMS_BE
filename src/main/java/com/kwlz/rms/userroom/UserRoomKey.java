@@ -1,4 +1,4 @@
-package com.kwlz.rms.repository.model;
+package com.kwlz.rms.userroom;
 
 import lombok.AllArgsConstructor;
 import lombok.Builder;
@@ -22,8 +22,5 @@ public class UserRoomKey implements Serializable {
 
     @Column(name = "room_id", nullable = false)
     private BigDecimal roomId;
-
-    @Column(name = "room_status_id", nullable = false)
-    private BigDecimal roomStatusId;
 
 }

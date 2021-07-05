@@ -1,6 +1,5 @@
-package com.kwlz.rms.repository.model;
+package com.kwlz.rms.userrole;
 
-import com.kwlz.rms.repository.model.type.RoomStatusType;
 import lombok.AccessLevel;
 import lombok.Data;
 import lombok.EqualsAndHashCode;
@@ -19,20 +18,20 @@ import java.math.BigDecimal;
 
 @Data
 @Entity
-@Table(name = "room_status", schema = "rms")
-public class RoomStatus {
+@Table(name = "user_role", schema = "rms")
+public class UserRole {
 
     @Id
     @EqualsAndHashCode.Exclude
-    @GeneratedValue(strategy = GenerationType.SEQUENCE, generator = "room_status_generator")
-    @SequenceGenerator(name = "room_status_generator", sequenceName = "room_status_seq",
-            schema = "rms", allocationSize = 10)
+    @GeneratedValue(strategy = GenerationType.SEQUENCE, generator = "user_role_generator")
+    @SequenceGenerator(name = "user_role_generator", sequenceName = "user_role_seq",
+            schema = "rms", allocationSize = 1)
     @Column(updatable = false, nullable = false)
     @Setter(AccessLevel.NONE)
     private BigDecimal id;
 
     @Enumerated(EnumType.STRING)
     @Column(name = "name", length = 64, nullable = false)
-    private RoomStatusType name;
+    private Role name;
 
 }

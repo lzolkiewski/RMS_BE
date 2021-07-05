@@ -1,4 +1,4 @@
-package com.kwlz.rms.repository.model;
+package com.kwlz.rms.room;
 
 import lombok.AccessLevel;
 import lombok.AllArgsConstructor;
@@ -29,7 +29,7 @@ public class Room {
     @EqualsAndHashCode.Exclude
     @GeneratedValue(strategy = GenerationType.SEQUENCE, generator = "room_generator")
     @SequenceGenerator(name = "room_generator", sequenceName = "room_seq",
-            schema = "rms", allocationSize = 10)
+            schema = "rms", allocationSize = 1)
     @Column(updatable = false, nullable = false)
     @Setter(AccessLevel.NONE)
     private BigDecimal id;
