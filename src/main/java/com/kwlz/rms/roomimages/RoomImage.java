@@ -22,7 +22,7 @@ import java.math.BigDecimal;
 @Data
 @Entity
 @Table(name = "room_images", schema = "rms")
-public class RoomImages {
+public class RoomImage {
 
     @Id
     @EqualsAndHashCode.Exclude

@@ -1,5 +1,6 @@
 package com.kwlz.rms.room;
 
+import com.kwlz.rms.roomimages.RoomImage;
 import lombok.AccessLevel;
 import lombok.AllArgsConstructor;
 import lombok.Builder;
@@ -13,9 +14,11 @@ import javax.persistence.Entity;
 import javax.persistence.GeneratedValue;
 import javax.persistence.GenerationType;
 import javax.persistence.Id;
+import javax.persistence.OneToMany;
 import javax.persistence.SequenceGenerator;
 import javax.persistence.Table;
 import java.math.BigDecimal;
+import java.util.Set;
 
 @Data
 @Builder
@@ -45,5 +48,14 @@ public class Room {
 
     @Column(name = "surface", nullable = false)
     private Float surface;
+
+    @Column(name = "floor", nullable = false)
+    private Integer floor;
+
+    @Column(name = "description", length = 512)
+    private String description;
+
+    @OneToMany(mappedBy = "room")
+    Set<RoomImage> roomImages;
 
 }
