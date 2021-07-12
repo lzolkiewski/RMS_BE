@@ -6,5 +6,5 @@ import org.springframework.stereotype.Repository;
 import java.math.BigDecimal;
 
 @Repository
-public interface RoomImagesRepository extends JpaRepository<RoomImages, BigDecimal> {
+public interface RoomImageRepository extends JpaRepository<RoomImage, BigDecimal> {
 }
