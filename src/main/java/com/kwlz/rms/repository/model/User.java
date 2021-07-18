@@ -1,6 +1,5 @@
-package com.kwlz.rms.user;
+package com.kwlz.rms.repository.model;
 
-import com.kwlz.rms.userrole.UserRole;
 import lombok.AccessLevel;
 import lombok.AllArgsConstructor;
 import lombok.Builder;

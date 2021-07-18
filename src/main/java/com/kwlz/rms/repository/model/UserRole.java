@@ -1,5 +1,6 @@
-package com.kwlz.rms.userrole;
+package com.kwlz.rms.repository.model;
 
+import com.kwlz.rms.dto.Role;
 import lombok.AccessLevel;
 import lombok.Data;
 import lombok.EqualsAndHashCode;

@@ -1,5 +1,10 @@
-package com.kwlz.rms.room;
+package com.kwlz.rms.controller;
 
+import com.kwlz.rms.dto.DetailedRoomDto;
+import com.kwlz.rms.dto.RoomDto;
+import com.kwlz.rms.dto.RoomResponse;
+import com.kwlz.rms.sevice.RoomService;
+import com.kwlz.rms.dto.RoomsResponse;
 import lombok.RequiredArgsConstructor;
 import org.springframework.http.ResponseEntity;
 import org.springframework.web.bind.annotation.GetMapping;

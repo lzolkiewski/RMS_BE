@@ -1,6 +1,9 @@
-package com.kwlz.rms.room;
+package com.kwlz.rms.mapper;
 
-import com.kwlz.rms.roomimages.RoomImage;
+import com.kwlz.rms.dto.DetailedRoomDto;
+import com.kwlz.rms.dto.RoomDto;
+import com.kwlz.rms.repository.model.Room;
+import com.kwlz.rms.repository.model.RoomImage;
 import org.springframework.stereotype.Component;
 
 import java.util.Collections;
@@ -8,8 +11,6 @@ import java.util.Objects;
 import java.util.Optional;
 import java.util.Set;
 import java.util.stream.Collectors;
-
-import static java.util.Objects.nonNull;
 
 @Component
 public class RoomMapper {

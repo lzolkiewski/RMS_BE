@@ -1,5 +1,11 @@
-package com.kwlz.rms.room;
+package com.kwlz.rms.sevice;
 
+import com.kwlz.rms.dto.DetailedRoomDto;
+import com.kwlz.rms.dto.RoomDto;
+import com.kwlz.rms.dto.RoomResponse;
+import com.kwlz.rms.dto.RoomsResponse;
+import com.kwlz.rms.repository.RoomRepository;
+import com.kwlz.rms.mapper.RoomMapper;
 import lombok.RequiredArgsConstructor;
 import org.springframework.stereotype.Service;
 

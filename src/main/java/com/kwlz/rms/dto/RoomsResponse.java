@@ -1,4 +1,4 @@
-package com.kwlz.rms.room;
+package com.kwlz.rms.dto;
 
 import lombok.Builder;
 import lombok.Value;

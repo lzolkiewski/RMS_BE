@@ -1,7 +1,6 @@
-package com.kwlz.rms.userrole;
+package com.kwlz.rms.dto;
 
 public enum Role {
-
     ADMIN,
     USER
 }

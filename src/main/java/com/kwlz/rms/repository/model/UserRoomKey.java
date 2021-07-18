@@ -1,4 +1,4 @@
-package com.kwlz.rms.userroom;
+package com.kwlz.rms.repository.model;
 
 import lombok.AllArgsConstructor;
 import lombok.Builder;

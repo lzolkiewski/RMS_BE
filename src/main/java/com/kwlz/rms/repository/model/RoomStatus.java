@@ -1,5 +1,6 @@
-package com.kwlz.rms.roomstatus;
+package com.kwlz.rms.repository.model;
 
+import com.kwlz.rms.dto.Status;
 import lombok.AccessLevel;
 import lombok.Data;
 import lombok.EqualsAndHashCode;

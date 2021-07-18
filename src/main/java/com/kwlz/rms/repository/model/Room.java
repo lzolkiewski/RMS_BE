@@ -1,6 +1,5 @@
-package com.kwlz.rms.room;
+package com.kwlz.rms.repository.model;
 
-import com.kwlz.rms.roomimages.RoomImage;
 import lombok.AccessLevel;
 import lombok.AllArgsConstructor;
 import lombok.Builder;

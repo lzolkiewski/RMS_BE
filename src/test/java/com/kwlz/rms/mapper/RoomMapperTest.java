@@ -1,5 +1,6 @@
-package com.kwlz.rms.room;
+package com.kwlz.rms.mapper;
 
+import com.kwlz.rms.repository.model.Room;
 import org.junit.jupiter.params.ParameterizedTest;
 import org.junit.jupiter.params.provider.MethodSource;
 
@@ -10,7 +11,7 @@ import static org.junit.jupiter.api.Assertions.*;
 
 class RoomMapperTest {
 
-    RoomMapper roomMapper = new RoomMapper();
+    final RoomMapper roomMapper = new RoomMapper();
 
     @ParameterizedTest
     @MethodSource("mapToDetailedRoomDto_shouldNotThrow_data")
