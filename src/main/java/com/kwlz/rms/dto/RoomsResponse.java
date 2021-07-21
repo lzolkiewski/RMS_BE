@@ -10,5 +10,6 @@ import java.util.Set;
 public class RoomsResponse<T> {
 
     Set<T> rooms;
+    Set<ErrorMessage> errorMessages;
 
 }
