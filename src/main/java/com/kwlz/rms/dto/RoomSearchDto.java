@@ -11,7 +11,5 @@ public class RoomSearchDto {
     Float dailyCost;
     Integer floor;
     Float surface;
-    Date dateFrom;
-    Date dateTo;
 
 }
